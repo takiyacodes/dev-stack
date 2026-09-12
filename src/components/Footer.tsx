@@ -11,7 +11,17 @@ const Footer = () => {
             Curated tools, technologies, and resources for developers building modern software.
           </p>
 
-          
+          <div className="flex items-center gap-4 pt-2">
+            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-xs text-slate-600 hover:text-slate-900 font-medium">
+              GitHub
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-xs text-slate-600 hover:text-slate-900 font-medium">
+              Twitter
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-xs text-slate-600 hover:text-slate-900 font-medium">
+              LinkedIn
+            </a>
+          </div>
         </div>
 
         <div>
