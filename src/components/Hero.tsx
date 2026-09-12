@@ -4,7 +4,7 @@ import heroImg from '../assets/banner-stack.png';
 const Hero = () => {
     return (
         <section id="home" className="py-20 px-8 max-w-7xl mx-auto flex items-center justify-between gap-12">
-            {/* Left Content */}
+            
             <div className="flex-1 space-y-6">
                 <h1 className="text-5xl font-extrabold text-black leading-tight">
                     Build Your Ideal <br />
@@ -30,7 +30,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Right Image */}
+           
             <div className="flex-1 flex justify-center">
                 <img src={heroImg} alt="Hero Banner" className="w-full max-w-md object-contain" />
             </div>
