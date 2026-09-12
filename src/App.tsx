@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] text-slate-100 font-sans">
-      <ToastContainer position="top-right" autoClose={2500} theme="dark" />
+      <ToastContainer position="top-right" autoClose={2500} theme="light" />
       <Navbar />
       <Hero />
 
