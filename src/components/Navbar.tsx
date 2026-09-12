@@ -20,7 +20,7 @@ const Navbar = () => {
 
        
         <div className="flex items-center gap-4">
-          <button className="text-slate-700 hover:text-white font-medium px-4 py-2 transition-colors">
+          <button className="text-slate-700 font-medium px-4 py-2 transition-colors">
             Sign In
           </button>
           <button className="bg-gradient-to-r from-orange-500 via-pink-500 to-violet-600 text-white font-medium px-6 py-2 rounded-full hover:opacity-90 shadow-md shadow-pink-500/20 transition-all">
