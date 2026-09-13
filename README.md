@@ -15,7 +15,7 @@ A modern web application built for managing and showcasing technology stacks eff
 - Vite
 
 ## Live Site
-- Live Link: https://netlify.com
+- Live Link: https://dev-stack-ebon.vercel.app/
 
 ---
 
