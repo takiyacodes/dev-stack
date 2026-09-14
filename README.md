@@ -19,6 +19,12 @@ A modern web application built for managing and showcasing technology stacks eff
 
 ---
 
+- *Navbar:* Has a 3-part layout on small devices (Hamburger Menu on Left, Logo on Center, Sign In/Up on Right) and expands to full navigation on desktop.
+- *Hero Section:* Responsive flex layout shifting from vertical stack on mobile to side-by-side elements on desktop.
+- *Card Section:* Responsive CSS Grid displaying 1-column on mobile, 2-column on tablet, and 3-column with sidebar layout on desktop.
+
+---
+
 ## React Questions & Answers
 
  1. What is JSX, and why is it used in React?
