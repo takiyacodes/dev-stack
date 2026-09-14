@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import {  toast, ToastContainer, } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,7 +9,7 @@ import YourStack from './components/YourStack';
 import Footer from './components/Footer';
 import type { Tech } from './types';
 
-function App() {
+function App() { 
   const [technologies, setTechnologies] = useState<Tech[]>([]);
   const [selectedStack, setSelectedStack] = useState<Tech[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -55,10 +54,12 @@ function App() {
       <Navbar />
       <Hero />
 
-      <main id="technologies" className="max-w-7xl mx-auto px-8 py-12">
-        <div className="mb-10">
-          <h2 className="text-3xl font-bold text-black">Explore the <span className="bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">Technologies</span></h2>
-          <p className="text-slate-700 mt-2">
+      <main id="technologies" className="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-12">
+        <div className="mb-8 sm:mb-10 text-center sm:text-left">
+          <h2 className="text-2xl sm:text-3xl font-bold text-black">
+            Explore the <span className="bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">Technologies</span>
+          </h2>
+          <p className="text-slate-700 mt-2 text-sm sm:text-base">
             Pick one technology per category to build your ideal stack.
           </p>
         </div>
@@ -68,8 +69,11 @@ function App() {
             <div className="w-12 h-12 border-4 border-pink-500 border-t-transparent rounded-full animate-spin"></div>
           </div>
         ) : (
-          <div className="grid grid-cols-4 gap-8 items-start">
-            <div className="col-span-3 grid grid-cols-3 gap-6">
+         
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
+            
+           
+            <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
               {technologies.map((tech) => (
                 <TechCard
                   key={tech.id}
@@ -80,7 +84,8 @@ function App() {
               ))}
             </div>
 
-            <div className="col-span-1">
+           
+            <div className="lg:col-span-1 w-full">
               <YourStack
                 selectedStack={selectedStack}
                 onRemove={handleRemoveFromStack}
